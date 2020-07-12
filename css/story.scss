@@ -10,34 +10,76 @@
         margin: 10px 10px;
     }
 
-    div{        
+    > div{        
         // height: 300px;
         margin: 20px 0;
         
-        &:nth-of-type(1){
-            padding: 100px 10px;
-
-            span{
-                padding: 0 20px;
+            
+            &:nth-of-type(1){
+                padding: 100px 10px;
+    
+                span{
+                    padding: 0 20px;
+                }
             }
-        }
-
-        &:nth-of-type(2){
-            img{
-                width: 500px;
+    
+            &:nth-of-type(2){
+                img{
+                    width: 500px;
+                }
             }
-        }
+            
+            &:nth-of-type(3){
+                
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+    
+                position: relative;
+
+                > div{
+                    position: absolute;
+                    left: 100px;
+                    top: 100px;
+                }
+
+                .circle{
+                    width: 100px;
+                    height: 100px;
+                    background: #000;
+                    border-radius: 50%;
+                    z-index: -1;
+                    position: relative;
+                    
+                    &:nth-of-type(1){
+                        background: #77B687;
+                    }
+                    
+                    &:nth-of-type(2){
+                        background: #E3C875;
+                    }
+                    
+                    &:nth-of-type(3){
+                        background: #E4B07C;
+                    }
+                    
+                    &:nth-of-type(4){
+                        background: #E89651;
+                    }
+
+                    img{
+                        margin: 10px 0;
+                        z-index: 1;
+                        width: 200px;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+
+                    }
+                }
+                
+            }
+
         
-        &:nth-of-type(3){
-            
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            
-            img{
-                width: 100px;
-            }
-
-        }
     }
 
 
