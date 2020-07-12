@@ -1,0 +1,47 @@
+
+#story {
+    // width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    h1{
+        font-size: 30px;
+        grid-column: 1/4;
+        margin: 10px 10px;
+    }
+
+    div{        
+        // height: 300px;
+        margin: 20px 0;
+        
+        &:nth-of-type(1){
+            padding: 100px 10px;
+
+            span{
+                padding: 0 20px;
+            }
+        }
+
+        &:nth-of-type(2){
+            img{
+                width: 500px;
+            }
+        }
+        
+        &:nth-of-type(3){
+            
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            
+            img{
+                width: 100px;
+            }
+
+        }
+    }
+
+
+    img{
+        width: 300px;
+    }
+}
