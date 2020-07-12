@@ -1,16 +1,51 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-nav{
-    width: 1200px;
+body{
+    background: #77b687;
+}
+// 輪播圖片
+#banner{
+    width: 90%;
+    height: 90vh;
     margin: 0 auto;
-    #nav-links{
-        display: grid;
-        grid-template-columns: 263px  263px  266px  342px  262px  264px  266px ;
+    background: no-repeat url(./img/輪播1.jpg);
+    background-size: cover;
+    background-position-y: -140px;
+    border-radius: 0px 0px 100px 100px;
+    z-index: -1;
+    // 輪播濾鏡
+    #gradient{
+        width: 100%;
+        height: 90vh;
+        margin: 0 auto;
+        border-radius: 0px 0px 60px 60px;
+        background-image:(linear-gradient(top, rgba(83,65,54,1) 0%,rgba(83,65,54,0.35) 15%,rgba(154,143,137,0) 50%,rgba(255,255,255,0) 100%));
+        // 輪播的濾鏡 現在透明度為1
+        z-index: 1;
+    }
+    // 導覽列
+    nav{
+        width: 100%;
+        text-align: center;
+            #nav-links{
+                width: 70%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    margin-top: 60px;
+                    line-height: 59px;
+                    font-size: 24px;
+                    font-family: 'Kosugi Maru', sans-serif;
+                    color: white;
+                }
+        }
     }
 }
+
