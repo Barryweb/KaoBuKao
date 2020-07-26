@@ -1,0 +1,15 @@
+
+#store{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    #store_first{
+        text-align: center;
+        align-items: center;
+    }
+
+    img{
+         width: 800px;
+    }
+}
