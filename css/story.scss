@@ -1,14 +1,26 @@
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    // background: #000;
+
+}
+
+$green:#77B687;
+
+
 #story {
     // width: 1200px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 2fr 1fr 1fr;
+     background: #fff;
+     z-index: -2;
 
-    h1{
-        font-size: 30px;
-        grid-column: 1/4;
-        margin: 10px 10px;
-    }
+     
 
     > div{        
         // height: 300px;
@@ -16,16 +28,29 @@
         
             
             &:nth-of-type(1){
-                padding: 100px 10px;
+                padding: 50px 10px;
+                
+                h1{
+                    font-size: 30px;  
+                    color: $green;
+                }
+
+                hr{
+                    margin: 20px 0;
+                }
     
-                span{
-                    padding: 0 20px;
+                div{
+                    width: 380px;
+                    margin: 0 auto;
+                    padding: 80px 0;
+                    font-size: 22px;
+                    color: $green;
                 }
             }
     
             &:nth-of-type(2){
                 img{
-                    width: 500px;
+                    width: 600px;
                 }
             }
             
@@ -47,11 +72,11 @@
                     height: 100px;
                     background: #000;
                     border-radius: 50%;
-                    z-index: -1;
+                    z-index: 2;
                     position: relative;
                     
                     &:nth-of-type(1){
-                        background: #77B687;
+                        background: $green;
                     }
                     
                     &:nth-of-type(2){
@@ -69,7 +94,7 @@
                     img{
                         margin: 10px 0;
                         z-index: 1;
-                        width: 200px;
+                        width: 180px;
                         position: absolute;
                         right: 0;
                         bottom: 0;
