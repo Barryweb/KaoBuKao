@@ -6,8 +6,6 @@
     text-decoration: none;
     list-style: none;
 
-    // background: #000;
-
 }
 
 $green:#77B687;
@@ -17,10 +15,12 @@ $green:#77B687;
     // width: 1200px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-     background: #fff;
+     background: #FFF;
      z-index: -2;
 
-     
+     border-bottom-right-radius: 100px;
+     border-top-right-radius: 100px;
+
 
     > div{        
         // height: 300px;

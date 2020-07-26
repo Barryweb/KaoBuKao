@@ -12,8 +12,10 @@
   display: grid;
   -ms-grid-columns: 2fr 1fr 1fr;
       grid-template-columns: 2fr 1fr 1fr;
-  background: #fff;
+  background: #FFF;
   z-index: -2;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
 }
 
 #story > div {
