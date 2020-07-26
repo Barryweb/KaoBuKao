@@ -260,13 +260,32 @@ body {
 }
 
 #join .box {
-  width: 200px;
-  height: 100%;
-  background: #d77249;
+  text-align: center;
 }
 
-#join .box p {
-  width: 5px;
-  margin: 0px auto;
+#join .box img {
+  width: 200px;
+  height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#news {
+  width: 90vw;
+  height: 90vh;
+  background: white;
+  margin-top: 150px;
+  border-radius: 0px 100px 100px 0px;
+  float: left;
+}
+
+#news a {
+  float: left;
+  padding-left: 50px;
+  margin-top: 100px;
+  font-size: 44px;
+  color: #77b687;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #77b687;
 }
 /*# sourceMappingURL=style.css.map */
