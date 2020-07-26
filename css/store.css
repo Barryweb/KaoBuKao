@@ -1,0 +1,18 @@
+#store {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+#store #store_first {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#store img {
+  width: 800px;
+}
+/*# sourceMappingURL=store.css.map */

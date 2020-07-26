@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,MAAM,CAAA;EAEF,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;CAUjC;;AAbD,AAKI,MALE,CAKF,YAAY,CAAA;EACR,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;CACtB;;AARL,AAUI,MAVE,CAUF,GAAG,CAAA;EACE,KAAK,EAAE,KAAK;CAChB",
+    "sources": [
+        "store.scss"
+    ],
+    "names": [],
+    "file": "store.css"
+}
