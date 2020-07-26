@@ -56,4 +56,36 @@ body {
   font-family: 'Kosugi Maru', sans-serif;
   color: white;
 }
+
+#banner nav #nav-links #logo img {
+  margin-top: -30px;
+  width: 180px;
+  height: 150px;
+}
+
+#presentation {
+  width: 90vw;
+  height: 90vh;
+  float: right;
+  background: #e3c875;
+  border-radius: 100px 0px 0px 100px;
+  z-index: -1;
+}
+
+#presentation h1 {
+  float: right;
+  margin-top: 130px;
+  padding-right: 150px;
+  font-size: 44px;
+  color: #E89651;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #E89651;
+}
+
+#presentation #all-pd img {
+  width: 600px;
+  height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 /*# sourceMappingURL=style.css.map */
