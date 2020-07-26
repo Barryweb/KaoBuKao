@@ -3,6 +3,9 @@
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  background: #e3c875;
 }
 
 #store #store_first {
@@ -12,7 +15,26 @@
           align-items: center;
 }
 
-#store img {
+#store #store_first img {
   width: 800px;
+}
+
+#store #store_two {
+  color: #755a2f;
+}
+
+#store #store_two h1 {
+  text-align: right;
+  margin: 10px 10px;
+}
+
+#store #store_two > div > div {
+  margin: 30px auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+#store #store_two img {
+  width: 17px;
 }
 /*# sourceMappingURL=store.css.map */
