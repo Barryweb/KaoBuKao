@@ -58,17 +58,125 @@ body{
     }
 }
 
+// 品牌故事
+$green:#77B687;
+
+
+#story {
+    margin-top: 150px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+     background: #FFF;
+     z-index: -2;
+
+     border-bottom-right-radius: 100px;
+     border-top-right-radius: 100px;
+    
+    > div{        
+        // height: 300px;
+        margin: 20px 0;
+        
+            #intro{
+                letter-spacing: 10px;
+                
+            }
+            &:nth-of-type(1){
+                padding: 50px 10px;
+                
+                h1{
+                    font-size: 36px;  
+                    color: $green;
+                }
+
+                hr{
+                    margin: 20px 0;
+                }
+    
+                div{
+                    width: 620px;
+                    height: 500px;
+                    margin: 0 auto;
+                    padding: 30px 0;
+                    font-size: 26px;
+                    color: $green;
+                }
+            }
+    
+            &:nth-of-type(2){
+                img{
+                    width: 600px;
+                }
+            }
+            
+            &:nth-of-type(3){
+                
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+    
+                position: relative;
+
+                > div{
+                    position: absolute;
+                    left: 100px;
+                    top: 100px;
+                }
+
+                .circle{
+                    width: 100px;
+                    height: 100px;
+                    background: #000;
+                    border-radius: 50%;
+                    z-index: 2;
+                    position: relative;
+                    
+                    &:nth-of-type(1){
+                        background: $green;
+                    }
+                    
+                    &:nth-of-type(2){
+                        background: #E3C875;
+                    }
+                    
+                    &:nth-of-type(3){
+                        background: #E4B07C;
+                    }
+                    
+                    &:nth-of-type(4){
+                        background: #E89651;
+                    }
+
+                    img{
+                        margin: 10px 0;
+                        z-index: 1;
+                        width: 180px;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+
+                    }
+                }
+                
+            }
+
+        
+    }
+
+}
+
+
+
 // 產品介紹
 #presentation{
+    margin-top: 150px;
     width: 90vw;
     height: 90vh;
-    float: right;
     background:#e3c875;
     border-radius: 100px 0px 0px 100px;
-    z-index: -1;
+    float: right;
     h1{
         float: right;
-        margin-top: 130px;
+        margin-top: 100px;
         padding-right: 150px;
         font-size: 44px;
         color:#E89651;
@@ -76,11 +184,81 @@ body{
         border-bottom: 3px solid #E89651;
     }
     #all-pd{
-       
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
         img{
-            width: 600px;
-            height: 600px;
+            width: 500px;
             object-fit: contain;
+            border-radius: 50px 50px 50px 50px;
+            box-shadow:10px 10px 5px  rgba(0, 0, 0, 0.2); ;
+        }
+        #pd1{
+            margin-left: 100px;
+            margin-top: 100px;
+            h2{
+                margin-top: 30px;
+                color: #534136;
+                font-size: 40px;
+            }
+            h4{
+                margin-top: 15px;
+                background:#534136;
+                font-size: 22px;
+                color: white;
+                width: 180px;
+            }
+        }
+        #pd2{
+            margin-top: 250px;
+            h2{
+                margin-top: 30px;
+                color: #534136;
+                font-size: 40px;
+            }
+            h4{
+                margin-top: 15px;
+                background:#534136;
+                font-size: 22px;
+                color: white;
+                width: 200px;
+            }
+        }
+    }
+}
+
+// 加盟資訊
+#join{
+    margin-top: 150px;
+    width: 90vw;
+    height: 90vh;
+    background:white;
+    float: left;
+    border-radius: 0px 100px 100px 0px;
+    a{
+        float: left;
+        padding-left: 50px;
+        margin-top: 100px;
+        font-size: 44px;
+        color:#E89651;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #E89651;
+    }
+    #outside-box{
+        width: 80vw;
+        height: 60vh;
+        margin: 200px auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .box{
+        width: 200px;
+        height: 100%;
+        background: #d77249;
+        p{
+            width: 5px;
+            margin: 0px auto;
+            
+
         }
     }
 }
