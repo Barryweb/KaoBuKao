@@ -260,16 +260,68 @@ $green:#77B687;
     }
 }
 
+// 門市據點
+#store{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    background:#e3c875;
+    float: right;
+    margin-top: 150px;
+    width: 90vw;
+    height: 90vh;
+    
+
+    #store_first{
+        text-align: center;
+        align-items: center;
+        
+        img{
+            width: 800px;
+        }
+    }
+
+    #store_two{
+        color:#755a2f;
+
+        h1{            
+        float: right;
+        margin-top: 100px;
+        padding-right: 150px;
+        font-size: 44px;
+        color:#E89651;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #E89651;
+        }
+
+        > div{         
+            > div {
+                margin: 50px auto;
+                text-align: center;
+                font-size: 20px;
+                letter-spacing: 10px;
+            }
+        }
+
+        img{
+            width: 17px;
+        }
+    }
+}
+
 // 最新消息
 #news{
     width: 90vw;
     height: 90vh;
     background: white;
     margin-top: 150px;
+    margin-bottom: 100px;
     border-radius: 0px 100px 100px 0px;
     float: left;
     a{
-        float: left;
+        float:left ;
         padding-left: 50px;
         margin-top: 100px;
         font-size: 44px;
@@ -277,8 +329,41 @@ $green:#77B687;
         padding-bottom: 20px;
         border-bottom: 3px solid #77b687;
     }
+    #text{
+        margin: 250px 100px;
+        letter-spacing: 10px;
+        h1{
+            font-size: 50px;
+            color:#E89651;
+            
+        }
+        h3{
+            font-size: 22px;
+        }
+        aa{
+            color:#E89651;
+        }
+    }
+    img{
+        width: 50%;
+        height: 25%;
+        float: right;
+        margin-top: -60%;
+    }
 
-
+}
+#contact{
+    width: 100vw;
+    height: 100vh;
     
-    
+    #contact-box{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        float: left;
+    }
 }
